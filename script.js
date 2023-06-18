@@ -17,7 +17,15 @@ function printLibrary(){
     for (i = 0; i < myLibrary.length; i++){
         let card = document.createElement('div');
         card.className = 'book-card';
-        card.innerHTML = myLibrary[i].title;
+        let titP = document.createElement('p');
+        let authP = document.createElement('p');
+        let pagesP = document.createElement('p');
+        titP.textContent = `${myLibrary[i].title}`;
+        authP.textContent += `${myLibrary[i].author}`;
+        pagesP.textContent += `${myLibrary[i].pages}`;
+        card.appendChild(titP);
+        card.appendChild(authP);
+        card.appendChild(pagesP);
         document.getElementsByClassName("main")[0].appendChild(card);
     }
 }
