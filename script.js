@@ -45,12 +45,12 @@ function game(){
 }
 
 function openForm(){
-    document.getElementById("formPopup").style.display = "flex";
-    document.getElementById("formPopup").style.justifyContent = "center";
+    document.getElementById("popupBg").style.display = "flex";
+    document.getElementById("popupBg").style.justifyContent = "center";
 }
 
 function closeForm(){
-    document.getElementById("formPopup").style.display = "none";
+    document.getElementById("popupBg").style.display = "none";
 }
 
 game()

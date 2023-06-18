@@ -27,7 +27,7 @@ body{
     padding: 30px 30px;
 }
 
-.form-popup{
+.popup-bg{
     display: none;
     position: fixed;
     z-index: 1;
@@ -37,19 +37,35 @@ body{
     background-color: rgba(0,0,0,0.4);
 }
 
-.popup-content{
+.popup-content-bg{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 25%;
+    height: 40%;
+    gap: 95px;
+}
+
+.cancel-div{
+    display: flex;
+    justify-content: end;
+}
+
+.form-div{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: beige;
-    width: 50%;
-    height: 50%;
 }
 
-.popup-content > form{
+.form-div > form{
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.input-block-button{
+    display: flex;
+    justify-content: space-around;
 }
 
 .main{

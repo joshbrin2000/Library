@@ -8,37 +8,43 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-        <div id="formPopup" class="form-popup">
-            <div class="popup-content">
-                <form action="/action_page.php" class="form-container">
-                    <h1>New Book</h1>
-                
-                    <div class="input-block">
-                        <label for="book title"><b>Book Title</b></label>
-                        <input type="text" placeholder="Enter Book Title" name="book title" required>
-                    </div>
-                
-                    <div class="input-block">
-                        <label for="book author"><b>Book Author</b></label>
-                        <input type="text" placeholder="Enter Book Author" name="book author" required>
-                    </div>
+        <div class="popup-bg" id="popupBg">
+            <div class="popup-content-bg">
+                <div class="cancel-div">
+                    <button type="button" class="btn-cancel" onclick="closeForm()">X</button>
+                </div>
+                <div class="form-div">
+                    <form action="/action_page.php" class="form-container">
+                        <h1>New Book</h1>
+                    
+                        <div class="input-block">
+                            <label for="book title"><b>Book Title</b></label>
+                            <input type="text" placeholder="Enter Book Title" name="book title" required>
+                        </div>
+                    
+                        <div class="input-block">
+                            <label for="book author"><b>Book Author</b></label>
+                            <input type="text" placeholder="Enter Book Author" name="book author" required>
+                        </div>
 
-                    <div class="input-block">
-                        <label for="book pages"><b>Number of Pages</b></label>
-                        <input type="text" placeholder="Enter Number of Pages" name="book pages" required>
-                    </div>
+                        <div class="input-block">
+                            <label for="book pages"><b>Number of Pages</b></label>
+                            <input type="text" placeholder="Enter Number of Pages" name="book pages" required>
+                        </div>
 
-                    <div class="input-block">
-                        <label for="read"><b>Read or Not?</b></label>
-                        <label for="read-yes">Yes</label>
-                        <input type="radio" id="read-yes" name="read">
-                        <label for="read-no">No</label>
-                        <input type="radio" id="read-no" name="read">
-                    </div>
-                
-                    <button type="submit" class="btn">Submit</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                  </form>
+                        <div class="input-block">
+                            <label for="read"><b>Read or Not?</b></label>
+                            <label for="read-yes">Yes</label>
+                            <input type="radio" id="read-yes" name="read">
+                            <label for="read-no">No</label>
+                            <input type="radio" id="read-no" name="read">
+                        </div>
+                    
+                        <div class="input-block-button">
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="header">
