@@ -13,14 +13,28 @@
                 <form action="/action_page.php" class="form-container">
                     <h1>New Book</h1>
                 
-                    <label for="book title"><b>Book Title</b></label>
-                    <input type="text" placeholder="Enter Book Title" name="book title" required>
+                    <div class="input-block">
+                        <label for="book title"><b>Book Title</b></label>
+                        <input type="text" placeholder="Enter Book Title" name="book title" required>
+                    </div>
                 
-                    <label for="book author"><b>Book Author</b></label>
-                    <input type="text" placeholder="Enter Book Author" name="book author" required>
+                    <div class="input-block">
+                        <label for="book author"><b>Book Author</b></label>
+                        <input type="text" placeholder="Enter Book Author" name="book author" required>
+                    </div>
 
-                    <label for="book pages"><b>Number of Pages</b></label>
-                    <input type="text" placeholder="Enter Number of Pages" name="book pages" required>
+                    <div class="input-block">
+                        <label for="book pages"><b>Number of Pages</b></label>
+                        <input type="text" placeholder="Enter Number of Pages" name="book pages" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="read"><b>Read or Not?</b></label>
+                        <label for="read-yes">Yes</label>
+                        <input type="radio" id="read-yes" name="read">
+                        <label for="read-no">No</label>
+                        <input type="radio" id="read-no" name="read">
+                    </div>
                 
                     <button type="submit" class="btn">Submit</button>
                     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
