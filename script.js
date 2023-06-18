@@ -44,4 +44,9 @@ function game(){
     printLibrary();
 }
 
+function openForm(){
+    document.getElementById("formPopup").style.display = "flex";
+    document.getElementById("formPopup").style.justifyContent = "center";
+}
+
 game()
