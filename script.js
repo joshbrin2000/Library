@@ -20,9 +20,9 @@ function printLibrary(){
         let titP = document.createElement('p');
         let authP = document.createElement('p');
         let pagesP = document.createElement('p');
-        titP.textContent = `${myLibrary[i].title}`;
-        authP.textContent += `${myLibrary[i].author}`;
-        pagesP.textContent += `${myLibrary[i].pages}`;
+        titP.textContent = `Title: ${myLibrary[i].title}`;
+        authP.textContent += `Author: ${myLibrary[i].author}`;
+        pagesP.textContent += `Number of Pages: ${myLibrary[i].pages}`;
         card.appendChild(titP);
         card.appendChild(authP);
         card.appendChild(pagesP);
@@ -31,11 +31,11 @@ function printLibrary(){
 }
 
 function game(){
-    let a = new Book('FF', 'FFFFFFFFF', '99');
-    let b = new Book('FF', 'FFFFFFFFF', '99');
-    let c = new Book('FF', 'FFFFFFFFF', '99');
-    let d = new Book('FF', 'FFFFFFFFF', '99');
-    let e = new Book('FF', 'FFFFFFFFF', '99');
+    let a = new Book('The First Book', 'Jerry Terry', '99');
+    let b = new Book('Book: The Second', 'Larry Barry', '199');
+    let c = new Book('Book III', 'Jean Sean', '299');
+    let d = new Book('Book - The Fourth', 'John Con', '399');
+    let e = new Book('Book', 'Titi Fritit', '499');
     addBookToLibrary(a);
     addBookToLibrary(b);
     addBookToLibrary(c);
