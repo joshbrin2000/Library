@@ -11,15 +11,18 @@
         <div id="formPopup" class="form-popup">
             <div class="popup-content">
                 <form action="/action_page.php" class="form-container">
-                    <h1>Login</h1>
+                    <h1>New Book</h1>
                 
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <label for="book title"><b>Book Title</b></label>
+                    <input type="text" placeholder="Enter Book Title" name="book title" required>
                 
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="book author"><b>Book Author</b></label>
+                    <input type="text" placeholder="Enter Book Author" name="book author" required>
+
+                    <label for="book pages"><b>Number of Pages</b></label>
+                    <input type="text" placeholder="Enter Number of Pages" name="book pages" required>
                 
-                    <button type="submit" class="btn">Login</button>
+                    <button type="submit" class="btn">Submit</button>
                     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                   </form>
             </div>

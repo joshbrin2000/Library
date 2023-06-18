@@ -49,4 +49,8 @@ function openForm(){
     document.getElementById("formPopup").style.justifyContent = "center";
 }
 
+function closeForm(){
+    document.getElementById("formPopup").style.display = "none";
+}
+
 game()
