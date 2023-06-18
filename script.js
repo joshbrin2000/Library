@@ -41,15 +41,6 @@ function printLibrary(){
     }
 }
 
-function game(){
-    addBookToLibraryP('The First Book', 'Jerry Terry', '99');
-    addBookToLibraryP('Book: The Second', 'Larry Barry', '199');
-    addBookToLibraryP('Book III', 'Jean Sean', '299');
-    addBookToLibraryP('Book - The Fourth', 'John Con', '399');
-    addBookToLibraryP('Book', 'Titi Fritit', '499');
-    printLibrary();
-}
-
 function openForm(){
     document.getElementById("popupBg").style.display = "flex";
     document.getElementById("popupBg").style.justifyContent = "center";
@@ -57,6 +48,15 @@ function openForm(){
 
 function closeForm(){
     document.getElementById("popupBg").style.display = "none";
+}
+
+function game(){
+    addBookToLibraryP('The First Book', 'Jerry Terry', '99');
+    addBookToLibraryP('Book: The Second', 'Larry Barry', '199');
+    addBookToLibraryP('Book III', 'Jean Sean', '299');
+    addBookToLibraryP('Book - The Fourth', 'John Con', '399');
+    addBookToLibraryP('Book', 'Titi Fritit', '499');
+    printLibrary();
 }
 
 game()
