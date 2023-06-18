@@ -14,22 +14,22 @@
                     <button type="button" onclick="closeForm()">X</button>
                 </div>
                 <div class="form-div">
-                    <form action="/action_page.php" class="form-container">
+                    <form action="javascript:" class="form-container">
                         <h1>New Book</h1>
                     
                         <div class="input-block">
                             <label for="book title"><b>Book Title</b></label>
-                            <input type="text" placeholder="Enter Book Title" name="book title" required>
+                            <input type="text" placeholder="Enter Book Title" id="bookTitle" name="book title" required>
                         </div>
                     
                         <div class="input-block">
                             <label for="book author"><b>Book Author</b></label>
-                            <input type="text" placeholder="Enter Book Author" name="book author" required>
+                            <input type="text" placeholder="Enter Book Author" id="bookAuthor" name="book author" required>
                         </div>
 
                         <div class="input-block">
                             <label for="book pages"><b>Number of Pages</b></label>
-                            <input type="text" placeholder="Enter Number of Pages" name="book pages" required>
+                            <input type="text" placeholder="Enter Number of Pages" id="bookPages" name="book pages" required>
                         </div>
 
                         <div class="input-block">
@@ -41,7 +41,8 @@
                         </div>
                     
                         <div class="input-block-button">
-                            <button type="submit" class="btn">Submit</button>
+                            <button type="submit" class="btn" onclick="addBookToLibraryP(document.getElementById('bookTitle').value, 
+                            document.getElementById('bookAuthor').value, document.getElementById('bookPages').value)">Submit</button>
                         </div>
                     </form>
                 </div>

@@ -9,11 +9,22 @@ function Book(title, author, pages){
     }
 }
 
-function addBookToLibrary(book){
-    myLibrary.push(book);
+function addBookToLibraryP(title, author, pages){
+    let sneed = new Book(title, author, pages);
+    myLibrary.push(sneed);
+    printLibrary();
+}
+
+function clearMain(){
+    let mainSect = document.getElementsByClassName("main")[0];
+
+    while (mainSect.hasChildNodes()) {
+        mainSect.removeChild(mainSect.firstChild);
+    }
 }
 
 function printLibrary(){
+    clearMain();
     for (i = 0; i < myLibrary.length; i++){
         let card = document.createElement('div');
         card.className = 'book-card';
@@ -31,16 +42,11 @@ function printLibrary(){
 }
 
 function game(){
-    let a = new Book('The First Book', 'Jerry Terry', '99');
-    let b = new Book('Book: The Second', 'Larry Barry', '199');
-    let c = new Book('Book III', 'Jean Sean', '299');
-    let d = new Book('Book - The Fourth', 'John Con', '399');
-    let e = new Book('Book', 'Titi Fritit', '499');
-    addBookToLibrary(a);
-    addBookToLibrary(b);
-    addBookToLibrary(c);
-    addBookToLibrary(d);
-    addBookToLibrary(e);
+    addBookToLibraryP('The First Book', 'Jerry Terry', '99');
+    addBookToLibraryP('Book: The Second', 'Larry Barry', '199');
+    addBookToLibraryP('Book III', 'Jean Sean', '299');
+    addBookToLibraryP('Book - The Fourth', 'John Con', '399');
+    addBookToLibraryP('Book', 'Titi Fritit', '499');
     printLibrary();
 }
 
